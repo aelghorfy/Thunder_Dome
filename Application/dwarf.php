@@ -1,10 +1,10 @@
 <?php
-class elf extends Character implements weapon, classe {
+class dwarf extends Character implements weapon, classe {
 
-public function __construct (string $name, int $hp, int $stamina, int $strenght, bool $statut){
+public function __construct (string $name){
     $this ->name = $name;
     $this ->hp = 100;
-     $this ->stamina = 50;
+     $this ->stamina = 60;
      $this ->strenght = 60 ;
      $this ->statut = true;
 }
@@ -51,11 +51,11 @@ public function axe(){
     $this -> strenght = 150;
 }
 
-public function staff(){}
+public function scepter(){}
 
 public function daguer(){}
 
-public function magicStaff(){}
+public function staff(){}
 
 //CLASSES
 

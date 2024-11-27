@@ -3,8 +3,8 @@ class elf extends Character implements weapon, classe {
 
 public function __construct (string $name){
     $this ->name = $name;
-    $this ->hp = 120;
-     $this ->stamina = 70;
+    $this ->hp = 100;
+     $this ->stamina = 80;
      $this ->strenght = 40;
      $this ->statut = true;
 }
@@ -51,11 +51,11 @@ public function bow(){
 
 public function axe(){}
 
-public function staff(){}
+public function scepter(){}
 
 public function daguer(){}
 
-public function magicStaff(){}
+public function staff(){}
 
 //CLASSES
 

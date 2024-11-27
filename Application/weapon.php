@@ -4,8 +4,8 @@ interface weapon {
     public function sword();
     public function bow();
     public function axe();
-    public function staff();
+    public function scepter();
     public function daguer();
-    public function magicStaff();
+    public function staff();
 
 }
