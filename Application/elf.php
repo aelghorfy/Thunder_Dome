@@ -41,7 +41,33 @@ public function setStatut(bool $statut){
 public function getStatut(){
         return $this ->statut;
 }
+//WEAPONS
 
+public function sword(){}
+
+public function bow(){}
+
+public function mace(){}
+
+public function staff(){}
+
+public function daguer(){}
+
+public function magicStaff(){}
+
+//CLASSES
+
+public function knight(){}
+
+public function mage(){}
+
+public function warrior(){}
+
+public function necromencer(){}
+
+public function rogue(){}
+
+public function priest(){}
 
 
 
