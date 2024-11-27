@@ -14,7 +14,9 @@ public function __construct (string $name, int $hp, int $stamina, int $strenght,
     $this ->statut = $statut;
 }
 
-public function attack(){}
+public function attack(){
+    
+}
 
 public function defend(){}
 

@@ -8,7 +8,7 @@ echo "name : " . $myElf -> getName() . "<br>".
 "Stamina : " . $myElf -> getStamina() . "<br>".
 "Strenght : ". $myElf -> getStrenght() . "<br>".
 "Statut : " .$myElf -> getStatut(). "<br>".
-"Equiped : ". "<br><br>";
+"Weapon : ". "<br><br>";
 
 $myDwarf = new dwarf("Dwarf");
 echo "name : " . $myDwarf -> getName() . "<br>".
@@ -16,7 +16,7 @@ echo "name : " . $myDwarf -> getName() . "<br>".
 "Stamina : " . $myDwarf -> getStamina() . "<br>".
 "Strenght : ". $myDwarf -> getStrenght() . "<br>".
 "Statut : " .$myDwarf -> getStatut(). "<br>".
-"Equiped : ". "<br><br>";
+"Weapon : ". "<br><br>";
 
 $ThunderDome;
 $ThunderDome = [$myElf, $myDwarf];
