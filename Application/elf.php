@@ -1,12 +1,12 @@
 <?php
-class elf extends Perso implements weapon, classe {
+class elf extends Character implements weapon, classe {
 
-public function __construct (string $name, int $hp, int $stamina, int $strenght, bool $statut){
+public function __construct (string $name){
     $this ->name = $name;
-    $this ->hp = $hp;
-     $this ->stamina = $stamina;
-     $this ->strenght = $strenght;
-     $this ->statut = $statut;
+    $this ->hp = 120;
+     $this ->stamina = 70;
+     $this ->strenght = 40;
+     $this ->statut = true;
 }
 
 public function setName(string $name){
@@ -45,9 +45,11 @@ public function getStatut(){
 
 public function sword(){}
 
-public function bow(){}
+public function bow(){
+    $this -> strenght = 110;
+}
 
-public function mace(){}
+public function axe(){}
 
 public function staff(){}
 
