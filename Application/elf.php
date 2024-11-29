@@ -1,14 +1,15 @@
 <?php
 class elf extends Character implements weapon, classe {
-// Protected properties for the elf race attributes
+// Protected properties for elf attributes
 public function __construct (string $name){
     $this ->name = $name;
-    $this ->hp = 100;
+    $this ->hp = 130;
      $this ->stamina = 80;
      $this ->strength = 40;
      $this ->shield = 50;
      $this ->statut = true;
      $this ->weaponName ="Hands";
+     $this ->WeaponStrength = 0;
 }
 
 public function setName(string $name){
@@ -54,19 +55,36 @@ public function getWeaponName(){
 }
 //WEAPONS
 
-public function sword(){}
+public function sword(){
+    $this -> weaponStrength = 5;
+    $this -> weaponName = "Sword";
+}
 
 public function bow(){
+    $this -> weaponStrength = 20;
     $this -> weaponName = "Bow";
 }
 
-public function axe(){}
+public function axe(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Axe";
+}
 
-public function scepter(){}
+public function scepter(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Scepter";
+}
 
-public function daguer(){}
+public function daguer(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Daguer";
+}
 
-public function staff(){}
+public function staff(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Staff";
+}
+
 
 //CLASSES
 

@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          "Stamina: " . $character1->getStamina() . "<br>" .
          "Strength: " . $character1->getStrength() . "<br>" .
          "Status: " . ($character1->getStatut() ? 'Alive' : 'Dead') . "<br>" .
-         "Weapon: " . $character1->getWeaponName() . "<br><br>";
+         "Weapon: " . $character1->getWeaponName() . ' (+'. $character2->getWeaponStrength().')'. "<br><br>";
 
     echo "<h2>Character 2</h2>";
     echo "Name: " . $character2->getName() . "<br>" .
@@ -56,6 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          "Stamina: " . $character2->getStamina() . "<br>" .
          "Strength: " . $character2->getStrength() . "<br>" .
          "Status: " . ($character2->getStatut() ? 'Alive' : 'Dead') . "<br>" .
-         "Weapon: " . $character2->getWeaponName() . "<br><br>";
+         "Weapon: " . $character2->getWeaponName() . ' (+'. $character2->getWeaponStrength().')'."<br><br>";
 }
 ?>

@@ -3,12 +3,13 @@ class dwarf extends Character implements weapon, classe {
 // Protected properties for dwarf attributes
 public function __construct (string $name){
     $this ->name = $name;
-    $this ->hp = 100;
+    $this ->hp = 110;
      $this ->stamina = 60;
-     $this ->strength = 30 ;
-     $this -> shield = 80;
+     $this ->strength = 60 ;
+     $this ->shield = 80;
      $this ->statut = true;
      $this ->weaponName ="Hands";
+     $this ->WeaponStrength = 0;
 }
 
 public function setName(string $name){
@@ -51,21 +52,40 @@ public function getStatut(){
 public function getWeaponName(){
     return $this ->weaponName;
 }
+public function getWeaponStrength(){
+    return $this ->weaponStrength;
+}
 //WEAPONS
 
-public function sword(){}
+public function sword(){
+    $this -> weaponStrength = 5;
+    $this -> weaponName = "Sword";
+}
 
-public function bow(){}
+public function bow(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Bow";
+}
 
 public function axe(){
+    $this -> weaponStrength = 20;
     $this -> weaponName = "Axe";
 }
 
-public function scepter(){}
+public function scepter(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Scepter";
+}
 
-public function daguer(){}
+public function daguer(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Daguer";
+}
 
-public function staff(){}
+public function staff(){
+    $this -> weaponStrength = 0;
+    $this -> weaponName = "Staff";
+}
 
 //CLASSES
 
