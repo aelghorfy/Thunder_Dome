@@ -1,12 +1,14 @@
 <?php
 class elf extends Character implements weapon, classe {
-
+// Protected properties for the elf race attributes
 public function __construct (string $name){
     $this ->name = $name;
     $this ->hp = 100;
      $this ->stamina = 80;
-     $this ->strenght = 40;
+     $this ->strength = 40;
+     $this ->shield = 50;
      $this ->statut = true;
+     $this ->weaponName ="Hands";
 }
 
 public function setName(string $name){
@@ -29,11 +31,17 @@ public function setStamina(int $stamina){
 public function getStamina(){
     return $this ->stamina;
 }
-public function setStrenght(int $strenght){
-    $this ->strenght = $strenght;
+public function setStrength(int $strength){
+    $this ->strength = $strength;
 }
-public function getStrenght(){
-        return $this ->strenght;
+public function getStrength(){
+        return $this ->strength;
+}
+public function setShield(int $shield){
+    $this ->shield = $shield;
+}
+public function getShield(){
+    return $this ->shield;
 }
 public function setStatut(bool $statut){
     $this ->statut = $statut;
@@ -41,12 +49,15 @@ public function setStatut(bool $statut){
 public function getStatut(){
         return $this ->statut;
 }
+public function getWeaponName(){
+    return $this ->weaponName;
+}
 //WEAPONS
 
 public function sword(){}
 
 public function bow(){
-    $this -> strenght = 110;
+    $this -> weaponName = "Bow";
 }
 
 public function axe(){}
@@ -59,17 +70,30 @@ public function staff(){}
 
 //CLASSES
 
-public function knight(){}
+public function ranger(){}
 
 public function mage(){}
 
 public function warrior(){}
 
-public function necromencer(){}
+public function necromancer(){}
 
 public function rogue(){}
 
-public function priest(){}
+public function priest(){
+
+}
+
+public function attack(){
+    return $this -> Strength;
+}
+
+public function defend(){
+    return $this -> stamina;
+}
+
+public function  die(){
+}
 
 
 
